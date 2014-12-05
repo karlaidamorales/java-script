@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <p onclick="change()">Click here to change below text:</p>
+
+    <p id="element">Lorem ipsum dolor.</p>
+
+    <script>
+      console.log("My brain hurts.");
+
+      alert("Hey!");
+
+      function change() {
+        document.getElementById('element').innerHTML = "Hello World!";
+      }
+
+      // variables
+      var x = 3;
+      var y = 5;
+
+      console.log(x + y);
+
+      // Arrays
+      var animals = [["Bats", "Dogs"], ["Cats", "Possums"]];
+      alert(animals [0][1]);
+
+      var dwarfs = ["Dopey", "Happy", "Grumpy", "Doc"];
+      console.log(dwarfs [3]);
+
+      // Logic
+      if (10 > 20){
+        console.log("Yay!!!");
+      } else {
+        console.log("Nope...");
+      }
+
+      // functions
+      function alertName(somePersonsName){
+        return alert(somePersonsName);
+      }
+      alertName("Karly")
+
+      function noArgfunction(){
+        console.log("Meh...");
+      }
+      noArgfunction();
+
+       function findMonkey(door) {
+        if (typeof(door) === "number") {
+          if (door === 1) {
+            console.log("...");
+          } else if (door === 2) {
+            console.log("THE MONKEY THREW POO AT YOU!");
+          } else if (door === 3) {
+            console.log("...");
+          } 
+        } else {
+          console.log("Pick a number from 1 to 3.");
+        }
+      }
+
+      findMonkey(2);
+      findMonkey("potato");
+
+      // Testing
+      console.log(10===10);
+      console.log(5 + 185);
+
+
+    </script>
+  </body>
+</html>
